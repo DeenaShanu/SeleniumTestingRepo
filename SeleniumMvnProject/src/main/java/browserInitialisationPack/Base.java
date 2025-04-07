@@ -9,7 +9,7 @@ public class Base {
 	public static void main(String[] args) {
 		Base baseObj = new Base();
 		baseObj.initializeBrowser();
-		baseObj.closeAndQuit();
+		//baseObj.closeAndQuit();
 	}
 	
 	public void initializeBrowser() {
