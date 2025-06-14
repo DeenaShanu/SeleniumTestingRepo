@@ -8,9 +8,9 @@ public class AlertHandlingCls extends Base{
 	public static void main(String[] args) {
 		AlertHandlingCls alertClsObj =  new AlertHandlingCls();
 		alertClsObj.initializeBrowser();
-		//alertClsObj.alertHandling();
-		//alertClsObj.secClickAlert();
-		alertClsObj.promptClk();
+		alertClsObj.alertHandling();
+	//	alertClsObj.secClickAlert();
+		//alertClsObj.promptClk();
 		
 
 	}

@@ -23,16 +23,16 @@ public class MultipleWindowHandling{
 		contactLinkLoc.click();
 		WebElement loginPortLoc = driver.findElement(By.xpath("//h1[text()='LOGIN PORTAL']"));
 		loginPortLoc.click();
-		String parent = driver.getWindowHandle();
+		String parent = driver.getWindowHandle();//get parent tab id
 		System.out.println(parent);
-		Set<String> childWindow = driver.getWindowHandles();
+		Set<String> childWindow = driver.getWindowHandles();//get all tabs including parent tab id
 		System.out.println("*****");
 		System.out.println(childWindow);
 		String title = "";
 		for (String temp : childWindow) {
 			if (!temp.equals(parent)) {
 				System.out.println(temp);
-				driver.switchTo().window(temp);
+				driver.switchTo().window(temp);// to skip title of parent window
 			//	System.out.println(driver.getTitle());
 				title = driver.getTitle();
 				
